@@ -1,0 +1,42 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.button-bg{
+    background: linear-gradient(to right, #19D3AE 0%, #0FCFEB 100%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.header-container {
+    position:relative;
+    background-image: url('../../../images/ChairBg.png');
+    background-size: cover;
+    padding: 10px 0px;
+}
+.header-container::after {
+    height:100%;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    right: 0;
+    background-color: #3A4256;
+    z-index: -50;
+}
+.business-info{
+    display: block;
+    position: static;
+    margin: 3rem 0px;
+}
+
+/* media query */
+@media (min-width: 768px) { 
+    .business-info{
+        margin-top: -50px;
+        z-index: 10;
+    }
+}

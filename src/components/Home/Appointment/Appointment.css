@@ -1,0 +1,26 @@
+.appointment-container{
+    background-image: url('../../../images/appointmentBg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    margin: 8rem 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+}
+.appointment-container::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #3A4256;
+    opacity: 0.8;
+    z-index: -1;
+}
+.appointment{
+    z-index: 1;
+}
+.appointment img {
+    height: 450px;
+}
